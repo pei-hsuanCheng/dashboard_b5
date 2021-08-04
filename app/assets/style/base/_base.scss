@@ -1,0 +1,30 @@
+body{
+  font-family: $font-family;
+  color: $gray-900;
+  line-height: $line-height;
+}
+
+a {
+  color: $gray-900;
+  text-decoration: none;
+  transition: $anim-time;
+
+  &:hover {
+    color: $gray-400;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+img, video{
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
