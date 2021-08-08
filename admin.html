@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    admin
+  </title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="d-flex">
+    <header class="header bg-light py-5 d-flex flex-column justify-content-between vh-100 overflow-scroll">
+      <div>
+        <h1 class="navbar-brand logo mb-5 ms-5">
+          <a href="#">ANSWER</a>
+        </h1>
+        <nav>
+          <ul class="list-unstyled in-Px-5 in-Pb-4">
+            <li>
+              <a href="#" class="nav-link p-0">
+                <i class="fas fa-shield-alt fs-4 me-2"></i>
+                <h6 class="d-inline">Dashboard</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link p-0">
+                <i class="fas fa-comments fs-4 me-2"></i>
+                <h6 class="d-inline">Question</h6>
+              </a>
+            </li>
+            <li class="">
+              <a href="assignment.html" class="nav-link p-0">
+                <i class="fas fa-clipboard-list fs-4 me-2"></i>
+                <h6 class="d-inline">Assignment</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link p-0">
+                <i class="fas fa-file-video fs-4 me-2"></i>
+                <h6 class="d-inline">Course</h6>
+              </a> 
+            </li>
+            <li class=" active">
+              <a href="admin.html" class="nav-link p-0 text-success position-relative">
+                <i class="fas fa-user-friends fs-4 me-2"></i>
+                <h6 class="d-inline">Admin</h6>
+              </a>
+            </li>
+            <li class="px-5 pb-4">
+              <a href="#" class="nav-link p-0">
+                <i class="fas fa-wrench fs-4 me-2"></i>
+                <h6 class="d-inline">Settings</h6>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-flex px-5 align-items-center">
+        <span class="avatar me-3 flex-shrink-0">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week5/andychen.jpeg" alt="andy chen picture"/>
+        </span>
+        <div>
+          <p class="fs-6 m-0">Andy Chen</p>
+          <p class="fs-6 m-0 text-secondary">andy0401@mail.com</p>
+        </div>
+      </div>
+    </header>
+    <main class="main vh-100 flex-grow-1 overflow-scroll p-4">
+      <header class="d-flex justify-content-between mb-4">
+  <div class="d-flex align-items-center">
+    <h2 class="me-5 mb-0 fw-bold">Admin</h2>
+    <div>
+      <button class="btn btn-hover-success fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#newAdmin">
+        <i class="fas fa-plus me-2 text-success"></i>
+        Add New Admin
+      </button>
+    </div>
+  </div>
+  <div class="in-Mx-4">
+    <button class="btn p-0 btn-hover-success">
+      <i class="fas fa-search"></i>
+    </a>
+    <button class="btn p-0 btn-hover-success">
+      <i class="fas fa-bell"></i>
+    </button>
+  </div>
+</header>
+<section>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th class="pb-1">
+          ID
+          <i class="fas fa-arrow-down text-success ms-1"></i>
+        </th>
+        <th class="pb-1">Name</th>
+        <th class="pb-1">Email</th>
+        <th class="pb-1">Verified</th>
+        <th class="pb-1"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="py-3">#1</th>
+        <td class="py-3">Emir Wicks</td>
+        <td class="py-3">emir.wicks@mail.com</td>
+        <td class="py-3">Yes</td>
+        <td class="icons py-3">
+          <i class="fas fa-eye me-4 btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin"></i>
+          <i class="fas fa-pen btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#editAdmin"></i>
+        </td>
+      </tr>
+      <tr>
+        <th class="py-3">#2</th>
+        <td class="py-3">Zaina Goldsmith</td>
+        <td class="py-3">zaina.goldsmith@mail.com</td>
+        <td class="py-3">Yes</td>
+        <td class="icons py-3">
+        <i class="fas fa-eye me-4 btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin"></i>
+          <i class="fas fa-pen btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#editAdmin"></i>
+        </td>
+      </tr>
+      <tr>
+        <th class="py-3">#3</th>
+        <td class="py-3">Mahima Lopez</td>
+        <td class="py-3">mahima.lopez@mail.com</td>
+        <td class="py-3">Yes</td>
+        <td class="icons py-3">
+        <i class="fas fa-eye me-4 btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin"></i>
+          <i class="fas fa-pen btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#editAdmin"></i>
+        </td>
+      </tr>
+      <tr>
+        <th class="py-3">#4</th>
+        <td class="py-3">Pharrell Murray</td>
+        <td class="py-3">pharrell.murray@mail.com</td>
+        <td class="py-3">Yes</td>
+        <td class="icons py-3">
+        <i class="fas fa-eye me-4 btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin"></i>
+          <i class="fas fa-pen btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#editAdmin"></i>
+        </td>
+      </tr>
+      <tr>
+        <th class="py-3">#5</th>
+        <td class="py-3">Annika Mcbride</td>
+        <td class="py-3">annika.mcbride@mail.com</td>
+        <td class="py-3">Yes</td>
+        <td class="icons py-3">
+        <i class="fas fa-eye me-4 btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin"></i>
+          <i class="fas fa-pen btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#editAdmin"></i>
+        </td>
+      </tr>
+      <tr>
+        <th class="py-3">#6</th>
+        <td class="py-3">Fatimah Clark</td>
+        <td class="py-3">fatimah.clark@mail.com</td>
+        <td class="py-3">Yes</td>
+        <td class="icons py-3">
+        <i class="fas fa-eye me-4 btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin"></i>
+          <i class="fas fa-pen btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#editAdmin"></i>
+        </td>
+      </tr>
+      <tr>
+        <th class="py-3">#7</th>
+        <td class="py-3">Klaudia Rhodes</td>
+        <td class="py-3">klaudia.rhodes@mail.com</td>
+        <td class="py-3">Yes</td>
+        <td class="icons py-3">
+        <i class="fas fa-eye me-4 btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin"></i>
+          <i class="fas fa-pen btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#editAdmin"></i>
+        </td>
+      </tr>
+      <tr>
+        <th class="py-3">#8</th>
+        <td class="py-3">Tillie Lucero</td>
+        <td class="py-3">tillie.lucero@mail.com</td>
+        <td class="py-3">Yes</td>
+        <td class="icons py-3">
+        <i class="fas fa-eye me-4 btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin"></i>
+          <i class="fas fa-pen btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#editAdmin"></i>
+        </td>
+      </tr>
+      <tr>
+        <th class="py-3">#9</th>
+        <td class="py-3">Sabrina Stephenson</td>
+        <td class="py-3">sabrina.stephenson@mail.com</td>
+        <td class="py-3">Yes</td>
+        <td class="icons py-3">
+        <i class="fas fa-eye me-4 btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin"></i>
+          <i class="fas fa-pen btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#editAdmin"></i>
+        </td>
+      </tr>
+      <tr>
+        <th class="py-3">#10</th>
+        <td class="py-3">Annie Smith</td>
+        <td class="py-3">annie.smith@mail.com</td>
+        <td class="py-3">Yes</td>
+        <td class="icons py-3">
+          <i class="fas fa-eye me-4 btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin"></i>
+          <i class="fas fa-pen btn-hover-success cursor-pointer" data-bs-toggle="modal" data-bs-target="#editAdmin"></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <nav aria-label="Page navigation" class="mt-5 d-flex justify-content-end">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link border-success" href="#">
+          <i class="fas fa-chevron-left text-success"></i>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link border-success text-dark" href="#">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link border-success text-dark" href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link border-success text-dark" href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link border-success" href="#">
+          <i class="fas fa-chevron-right text-success"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</section>
+<div class="modal fade" id="newAdmin" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header p-4 pb-0 border-0">
+        <h3 class="modal-title fs-4 fw-bold" id="exampleModalLabel">New Admin</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <h4 class="mb-3 fs-5 fw-bold">Account</h3>
+        <div class="mb-2">
+          <label for="name" class="form-label mb-0">Name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-2">
+          <label for="email" class="form-label mb-0">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <hr/>
+        <h4 class="mb-3 fs-5 fw-bold">Verification</h3>
+        <div>
+          <div class="fw-bold mb-2 fw-bold">
+            <i class="fas fa-exclamation-triangle text-danger"></i>
+            Unverified
+          </div>
+          <button type="button" class="btn btn-outline-success border-secondary btn-lg w-100">
+            Send Verification Mail
+          </button>
+        </div>
+        <hr/>
+        <form>
+          <h4 class="mb-3 fs-5 fw-bold">Access Level</h3>
+          <div>
+            <select class="form-select mb-3 text-secondary">
+              <option selected >-Choose access level-</option>
+            </select>
+          </div>
+          <hr/>
+          <h4 class="mb-3 fs-5 fw-bold">Custom Access</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Lecture" id="Lecture">
+            <label class="form-check-label" for="Lecture">
+              Lecture
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Coupon">
+            <label class="form-check-label" for="Coupon">
+              Coupon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Message">
+            <label class="form-check-label" for="Message">
+              Message
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Setting">
+            <label class="form-check-label" for="Setting">
+              Setting
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="Task Menu">
+            <label class="form-check-label" for="Task Menu">
+              Task Menu
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cancle</button>
+        <button type="submit" class="btn btn-success">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="editAdmin" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header p-4 pb-0 border-0">
+        <h3 class="modal-title fs-4" id="exampleModalLabel">Edit Admin</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <form>
+          <fieldset>
+        <legend class="mb-3 fs-5 fw-bold">Account</legend>
+        <div class="mb-2">
+          <label for="name" class="form-label mb-0">Name</label>
+          <input type="text" class="form-control" id="name" value="Emir Wicks" required>
+        </div>
+        <div class="mb-2">
+          <label for="email" class="form-label mb-0">Email</label>
+          <input type="email" class="form-control" id="email" value="emir.wicks@mail.com" required>
+        </div>
+      </fieldset>
+        <hr/>
+        <legend class="mb-3 fs-5 fw-bold">Verification</legend>
+        <div class="d-flex justify-content-between">
+          <div class="fw-bold mb-2 fs-7 fw-bold">
+            <i class="fas fa-check-circle text-success"></i>
+            Verified
+          </div>
+          <p class="fs-7">2020/4/12</p>
+        </div>
+        <button type="button" class="btn btn-outline-success border-secondary btn-lg w-100">
+          Send Verification Mail
+        </button>
+        <hr/>
+          <fieldset>
+          <legend class="mb-3 fs-5 fw-bold">Access Level</legend>
+          <div>
+            <select class="form-select mb-3 text-secondary" required>
+              <option>-Choose access level-</option>
+              <option selected >Admin</option>
+            </select>
+          </div>
+        </fieldset>
+          <hr/>
+          <fieldset>
+          <h4 class="mb-3 fs-5 fw-bold">Custom Access</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Lecture" id="Lecture">
+            <label class="form-check-label" for="Lecture">
+              Lecture
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Coupon">
+            <label class="form-check-label" for="Coupon">
+              Coupon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Message">
+            <label class="form-check-label" for="Message">
+              Message
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Setting">
+            <label class="form-check-label" for="Setting">
+              Setting
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="Task Menu">
+            <label class="form-check-label" for="Task Menu">
+              Task Menu
+            </label>
+          </div>
+        </fieldset>
+        </form>
+        <hr/>
+        <h4 class="mb-3 fs-5 fw-bold">Deactivate Account</h3>
+        <div class="fw-bold mb-2 fs-7 text-danger">
+          <i class="fas fa-exclamation-triangle"></i>
+          This cannot be undone!
+        </div>
+        <button type="button" class="btn btn-outline-danger btn-lg w-100">
+          Deactivate This Account
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cancle</button>
+        <button type="submit" class="btn btn-success">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="viewAdmin" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-4 d-flex">
+        <div class="modal-img flex-shrink-0">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week5/emir.jpeg" />
+        </div>
+        <div class="flex-grow-1">
+          <div class="d-flex justify-content-between">
+            <span>#1</span>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <span class="fs-7 mb-0">Admin</span>
+          <h6 class="fs-5 mb-2">Emir Wicks</h6>
+          <p class="fs-7">emir.wicks@mail.com</p>
+          <div class="d-flex justify-content-between">
+            <span class="badge bg-light text-dark">Verified</span>
+            <i class="fas fa-chevron-down text-success" data-bs-toggle="collapse" href="#verifiedAction" role="button" aria-expanded="false" aria-controls="verifiedAction"></i>
+          </div>
+          <div class="collapse multi-collapse mt-5" id="verifiedAction">
+            <div class="d-flex">
+              <button class="btn btn-outline-danger flex-grow-1 me-3">Deactivate</button>
+              <button class="btn btn-success">Edit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+  </div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

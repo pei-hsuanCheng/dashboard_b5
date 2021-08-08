@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    assignment
+  </title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="d-flex">
+    <header class="header bg-light py-5 d-flex flex-column justify-content-between vh-100 overflow-scroll">
+      <div>
+        <h1 class="navbar-brand logo mb-5 ms-5">
+          <a href="#">ANSWER</a>
+        </h1>
+        <nav>
+          <ul class="list-unstyled in-Px-5 in-Pb-4">
+            <li>
+              <a href="#" class="nav-link p-0">
+                <i class="fas fa-shield-alt fs-4 me-2"></i>
+                <h6 class="d-inline">Dashboard</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link p-0">
+                <i class="fas fa-comments fs-4 me-2"></i>
+                <h6 class="d-inline">Question</h6>
+              </a>
+            </li>
+            <li class=" active">
+              <a href="assignment.html" class="nav-link p-0 text-success position-relative">
+                <i class="fas fa-clipboard-list fs-4 me-2"></i>
+                <h6 class="d-inline">Assignment</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link p-0">
+                <i class="fas fa-file-video fs-4 me-2"></i>
+                <h6 class="d-inline">Course</h6>
+              </a> 
+            </li>
+            <li class="">
+              <a href="admin.html" class="nav-link p-0">
+                <i class="fas fa-user-friends fs-4 me-2"></i>
+                <h6 class="d-inline">Admin</h6>
+              </a>
+            </li>
+            <li class="px-5 pb-4">
+              <a href="#" class="nav-link p-0">
+                <i class="fas fa-wrench fs-4 me-2"></i>
+                <h6 class="d-inline">Settings</h6>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-flex px-5 align-items-center">
+        <span class="avatar me-3 flex-shrink-0">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week5/andychen.jpeg" alt="andy chen picture"/>
+        </span>
+        <div>
+          <p class="fs-6 m-0">Andy Chen</p>
+          <p class="fs-6 m-0 text-secondary">andy0401@mail.com</p>
+        </div>
+      </div>
+    </header>
+    <main class="main vh-100 flex-grow-1 overflow-scroll p-4">
+      <header class="d-flex justify-content-between">
+  <div class="d-flex">
+    <h2 class="fw-bold">Assignment</h2>
+    <div>
+      <select class="form-select border-0" aria-label="courses">
+        <option selected>All Courses</option>
+      </select>
+    </div>
+  </div>
+  <div class="in-Mx-4">
+    <a class="cursor-pointer">
+      <i class="fas fa-search btn-hover-success"></i>
+    </a>
+    <a class="cursor-pointer">
+      <i class="fas fa-bell btn-hover-success"></i>
+    </a>
+  </div>
+</header>
+<section>
+  <select class="form-select border-0 w-25" aria-label="courses">
+    <option selected>All(4)</option>
+  </select>
+  <div class="container">
+    <div class="row">
+      <aside class="col-4 px-2">
+        <ul class="list-group">
+          <li class="list-group-item active" aria-current="true">
+            <div class="d-flex justify-content-between">
+              <small>Chapter Assignment 2</small>
+              <small>4hrs ago</small>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h6 class="fw-bold mb-0">Please check this file…</h6>
+              <small class="text-muted">Emily Wang</small>
+            </div>
+          </li>
+          <li class="list-group-item" aria-current="true">
+            <div class="d-flex justify-content-between">
+              <small>Chapter Assignment 1</small>
+              <small>4hrs ago</small>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h6 class="fw-bold mb-0">My Homework</h6>
+              <small class="text-muted">David Xu</small>
+            </div>
+          </li>
+          <li class="list-group-item" aria-current="true">
+            <div class="d-flex justify-content-between">
+              <small>Final Assignment</small>
+              <small>4hrs ago</small>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h6 class="fw-bold mb-0">Have a problem with this…</h6>
+              <small class="text-muted">Tony Wei</small>
+            </div>
+          </li>
+          <li class="list-group-item" aria-current="true">
+            <div class="d-flex justify-content-between">
+              <small>Final Assignment</small>
+              <small>4hrs ago</small>
+            </div>
+            <div class="d-flex justify-content-between">
+              <h6 class="fw-bold mb-0">Did I do it right?</h6>
+              <small class="text-muted">Christina Lin</small>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <main class="col-8 px-2">
+        <div class="card comments mb-4" comment-tag="2 comments">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <div>
+              <small>Chapter Assignment 2 / HTML&CSS</small>
+              <h6>Please check this file for me, thanks!</h6>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+          <div class="card-body in-My-4">
+            <section class="d-flex">
+              <div class="avatar flex-shrink-0 me-3">
+                <img src="https://hexschool.github.io/webLayoutTraining1st/week5/emilywang.jpeg" alt="emily wang picture"/>
+              </div>
+              <div class="border-bottom pb-4">
+                <p class="fw-bold mb-1">Emily Wang</p>
+                <p class="fs-7 text-muted mb-4">10:38 AM (4 hours ago)</p>
+                <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
+                  following code the height of the div is bigger than the height of the img ? There is a gap below the
+                  image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                  <button type="button" class="btn btn-light fw-bold border-1 border-secondary ps-3 pe-4">
+                    <i class="fas fa-paperclip me-2"></i>
+                    HW-2-David.zip
+                  </button>
+              </div>
+            </section>
+            <section class="d-flex">
+              <div class="avatar flex-shrink-0 me-3">
+                <img src="https://hexschool.github.io/webLayoutTraining1st/week5/andychen.jpeg" alt="andy chen picture"/>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <p class="fw-bold mb-1">Andy Chen (You)</p>
+                    <p class="fs-7 text-muted mb-4">13:24 AM (1 hours ago)</p>
+                  </div>
+                  <div>
+                    <div class="in-Mx-4">
+                      <a class="cursor-pointer">
+                        <i class="far fa-star"></i>
+                      </a>
+                      <a class="cursor-pointer">
+                        <i class="fas fa-pen"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
+                <p>You can:</p>
+                <ul>
+                  <li>adjust the <kbd>vertical-align</kbd> of the image to position it elsewhere (e.g. the <kbd>middle</kbd> ) or</li>
+                  <li>change the <kbd>display</kbd> so it isn’t inline.</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+        <footer class="d-flex justify-content-between">
+          <div>
+            <a class="me-5 btn-hover-success cursor-pointer">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+            <a class="btn-hover-success cursor-pointer">
+            <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+          <div>
+            <button type="button" class="btn me-4 btn-outline-success">Mark as read</button>
+            <button type="button" class="btn btn-success">Reply</button>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </div>
+</section>
+    </main>
+  </div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
