@@ -1,0 +1,13 @@
+.comments {
+  position: relative;
+
+  &::before {
+    content: attr(comment-tag);
+    position: absolute;
+    right: 0;
+    top: map-get($spacers, 2)*-1;
+    color: $gray-600;
+    font-size: $font-size-sm;
+    transform: translateY(-100%);
+  }
+}

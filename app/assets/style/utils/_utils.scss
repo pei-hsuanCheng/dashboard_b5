@@ -1,7 +1,41 @@
-.bg-gray-100 {
-  background-color: $gray-100;
+.btn-hover-success {
+  &:hover {
+    color: $success;
+  }
 }
 
-.bg-success {
-  background-color: $success;
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@each $key, $value in $spacers {
+  .in-Mx-#{$key} {
+    & > *:not(:last-child) {
+      margin-right: $value;
+      margin-left: $value;
+    }
+  }
+  .in-My-#{$key} {
+    & > *:not(:last-child) {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+  }
+  .in-Px-#{$key} {
+    & > *:not(:last-child) {
+      padding-right: $value;
+      padding-left: $value;
+    }
+  }
+  .in-Pb-#{$key} {
+    & > *:not(:last-child) {
+      padding-bottom: $value;
+    }
+  }
+}
+
+@each $key, $value in $grays {
+  .bg-gray-#{$key} {
+    background-color: $value;
+  }
 }

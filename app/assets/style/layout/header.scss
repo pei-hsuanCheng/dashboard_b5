@@ -1,12 +1,25 @@
 .header {
-  width: 296px;
-  overflow-y: scroll;
+  .active {
+    a {
+      &::before {
+        content: "";
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        background: #198754;
+        left: -2rem;
+        top: 0;
+      }
+    }
+  }
 }
-.nvbar-brand {
-  background: url("https://hexschool.github.io/webLayoutTraining1st/week5/logo-ANSWER.svg") no-repeat;
+
+.logo {
   width: 150px;
-  height: 150px;
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week5/logo-ANSWER.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
   text-indent: 101%;
-  overflow:hidden;
-  white-space: nowrap;
+  overflow: hidden;
 }

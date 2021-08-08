@@ -1,0 +1,9 @@
+.modal-img {
+  width: 140px;
+  height: 140px;
+  margin-right: 24px;
+
+  img {
+    @include imgFit;
+  }
+}
